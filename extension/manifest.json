@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "webpaste",
+    "version": "1.0",
+    "description": "Don't use this lol",
+    "permissions": [
+        "storage",
+        "activeTab",
+        "tabs"
+    ],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    "options_ui": {
+        "page": "options.html"
+    }
+}
