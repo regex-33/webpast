@@ -60,4 +60,3 @@ Copy only the values inside " " in expension option, Save.
 
 Run webpaste binary on terminal, Click on webpaste extension, click on "Google URLs", and you will see URL from the google search engine in your terminal.
 
-# webpast
