@@ -1,11 +1,11 @@
-browser.runtime.onInstalled.addListener(function() {
-    browser.declarativeContent.onPageChanged.removeRules(undefined, function() {
-        browser.declarativeContent.onPageChanged.addRules([{
-            conditions: [new browser.declarativeContent.PageStateMatcher({
-                // Add your page URL condition here
-            })],
-            actions: [new browser.declarativeContent.ShowPageAction()]
-        }]);
-    });
-});
+chrome.runtime.onInstalled.addListener(function(){
 
+    chrome.declarativeContent.onPageChanged.removeRules(undefined, function(){
+        chrome.declarativeContent.onPageChanged.addRules([{
+            conditions: [new chrome.declarativeContent.PageStateMatcher({
+                //pageUrl: {hostEquals: 'github.com'}
+            })],
+            actions: [new chrome.declarativeContent.ShowPageAction()]
+        }])
+    })
+})
